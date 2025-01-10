@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <style>
+        body { margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        iframe { border: none; }
+        header, footer { text-align: center; padding: 10px; background-color: #f1f1f1; }
+        nav { padding: 10px; background-color: #333; color: white; }
+        nav a { color: white; margin: 0 10px; text-decoration: none; }
+        #top-frame { height: 80px; background-color: #4CAF50; color: white; }
+        #left-frame { width: 200px; background-color: #f4f4f4; padding: 10px; }
+        #right-frame { padding: 20px; }
+    </style>
+</head>
+<body>
+    <header id="top-frame">
+        <h1>Online Book Store</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <div style="display: flex;">
+        <iframe id="left-frame" src="left-frame.html" width="200" height="500"></iframe>
+        <iframe id="right-frame" src="right-frame.html" width="1000" height="500"></iframe>
+    </div>
+    <footer>
+        <p>&copy; 2025 Online Book Store</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+</head>
+<body>
+    <ul>
+        <li><a href="csbs.html" target="right-frame">CSBS</a></li>
+        <li><a href="cse.html" target="right-frame">CSE</a></li>
+        <li><a href="ece.html" target="right-frame">ECE</a></li>
+        <li><a href="eee.html" target="right-frame">EEE</a></li>
+        <li><a href="civil.html" target="right-frame">Civil</a></li>
+    </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Description</title>
+</head>
+<body>
+    <h2>Welcome to the Online Book Store</h2>
+    <p>Explore our wide collection of books across various categories like CSBS, CSE, ECE, EEE, Civil Engineering and more.</p>
+    <p>Select a category from the left navigation to browse through the books!</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        form { width: 300px; margin: auto; }
+        input[type="text"], input[type="password"] { width: 100%; padding: 10px; margin: 5px 0; }
+        input[type="submit"], input[type="reset"] { padding: 10px 20px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login to Online Book Store</h1>
+        <nav>
+            <a href="home.html">Home</a> | 
+            <a href="login.html">Login</a> | 
+            <a href="register.html">Registration</a> | 
+            <a href="catalogue.html">Catalogue</a> | 
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <form action="#" method="post">
+        <label for="username">CSBS Login:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Online Book Store</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 10px; text-align: left; border: 1px solid #ddd; }
+        img { width: 100px; }
+        button { padding: 5px 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Book Catalogue</h1>
+        <nav>
+            <a href="home.html">Home</a> | 
+            <a href="login.html">Login</a> | 
+            <a href="register.html">Registration</a> | 
+            <a href="catalogue.html">Catalogue</a> | 
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cover</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Price</th>
+                <th>Add to Cart</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="book1.jpg" alt="Book 1"></td>
+                <td>Book Title 1</td>
+                <td>Author 1</td>
+                <td>Publisher 1</td>
+                <td>$20</td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td><img src="book2.jpg" alt="Book 2"></td>
+                <td>Book Title 2</td>
+                <td>Author 2</td>
+                <td>Publisher 2</td>
+                <td>$25</td>
+                <td><button>Add to Cart</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer>
+        <p>&copy; 2025 Online Book Store</p>
+    </footer>
+</body>
+</html>

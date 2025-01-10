@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+</head>
+<body>
+    <!-- Frameset Structure -->
+    <frameset rows="20%,*">
+        <!-- Top Frame -->
+        <frame src="top.html" name="topFrame" scrolling="no" noresize>
+        
+        <!-- Middle Frames (Left and Right) -->
+        <frameset cols="20%,*">
+            <!-- Left Frame for Navigation -->
+            <frame src="left.html" name="leftFrame" scrolling="auto">
+            
+            <!-- Right Frame for Main Content -->
+            <frame src="right.html" name="rightFrame" scrolling="auto">
+        </frameset>
+    </frameset>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            margin: 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Bookstore</h1>
+    <nav>
+        <a href="index.html" target="_top">Home</a>
+        <a href="login.html" target="rightFrame">Login</a>
+        <a href="register.html" target="rightFrame">Registration</a>
+        <a href="catalogue.html" target="rightFrame">Catalogue</a>
+        <a href="cart.html" target="rightFrame">Cart</a>
+    </nav>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="csbs.html" target="rightFrame">CSBS Books</a></li>
+        <li><a href="fiction.html" target="rightFrame">Fiction</a></li>
+        <li><a href="science.html" target="rightFrame">Science</a></li>
+        <li><a href="children.html" target="rightFrame">Children's Books</a></li>
+    </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome to Our Online Bookstore</h2>
+    <p>Discover a wide variety of books from different categories. Navigate through the left menu to explore our catalogue, and use the top menu for quick access to key sections.</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSBS Books</h2>
+    <ul>
+        <li>Book 1: Introduction to Computer Science</li>
+        <li>Book 2: Data Structures and Algorithms</li>
+        <li>Book 3: Artificial Intelligence</li>
+    </ul>
+</body>
+</html>

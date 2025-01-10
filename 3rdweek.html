@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        .cart-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        .cart-table th, .cart-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .cart-table th {
+            background-color: #f4f4f4;
+        }
+        .total-amount {
+            text-align: right;
+            font-size: 18px;
+            margin-right: 20%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Logo Web Site Name</h1>
+    </div>
+
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Login</a>
+        <a href="#">Registration</a>
+        <a href="#">Catalogue</a>
+        <a href="#">Cart</a>
+    </div>
+
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java 2XML</td>
+                <td>$35.5</td>
+                <td>2</td>
+                <td>$70</td>
+            </tr>
+            <tr>
+                <td>bible</td>
+                <td>$40.5</td>
+                <td>1</td>
+                <td>$40.5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="total-amount">
+        <strong>Total amount: $130.5</strong>
+    </div>
+
+</body>
+</html>

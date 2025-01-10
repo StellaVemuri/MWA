@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore | Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .banner {
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .categories, .featured {
+            display: flex;
+            gap: 20px;
+        }
+        .card {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bookstore</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Bestsellers</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <h2>Welcome to Our Bookstore</h2>
+        <p>Discover your next favorite book</p>
+    </div>
+
+    <div class="section categories">
+        <div class="card">
+            <h3>Fiction</h3>
+        </div>
+        <div class="card">
+            <h3>Non-Fiction</h3>
+        </div>
+        <div class="card">
+            <h3>Science Fiction</h3>
+        </div>
+        <div class="card">
+            <h3>Children's Books</h3>
+        </div>
+    </div>
+
+    <div class="section featured">
+        <div class="card">
+            <h3>Top Seller</h3>
+            <p>Book Name</p>
+        </div>
+        <div class="card">
+            <h3>New Arrival</h3>
+            <p>Book Name</p>
+        </div>
+        <div class="card">
+            <h3>Staff Pick</h3>
+            <p>Book Name</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow us on social media | Contact: bookstore@example.com</p>
+        <p>&copy; 2025 Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
